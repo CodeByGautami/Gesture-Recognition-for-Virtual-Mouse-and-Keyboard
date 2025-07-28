@@ -43,3 +43,21 @@ This project enables users to control their computer using a webcam — with **e
 <img width="889" height="603" alt="image" src="https://github.com/user-attachments/assets/863c8349-faee-4632-937b-6f11ee7f868a" />
 
 
+
+## 🧑‍💻 How to Run the Project
+
+1. Clone the repo
+   git clone https://github.com/CodeByGautami/gesture-mouse-keyboard.git
+
+2. Install dependencies
+   pip install opencv-python numpy
+
+3. Run the program
+   Open the project in Spyder IDE (Anaconda)
+
+4. Run main.py
+   Make sure your webcam is connected and accessible
+
+
+
+
