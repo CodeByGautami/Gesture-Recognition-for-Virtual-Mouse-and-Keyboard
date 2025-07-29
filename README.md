@@ -4,25 +4,126 @@ This project enables users to control their computer using a webcam — with **e
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Language:** Python  
-- **Libraries:** OpenCV, NumPy  
-- **Tools:** Anaconda, Spyder IDE  
-- **Algorithms:** Haar Cascade Classifier (for eyes and hands)  
-- **Database :** SQLite
-
----
-
 ## 🚀 Features
 
-- 👁️ **Eye movement detection** to move the mouse cursor
-- ✋ **Hand gesture recognition** to trigger keyboard keys
-- Real-time tracking using webcam
-- Contactless, hands-free control
-- Python-based, lightweight application
+- 👁️ **Eye Blink Mouse Control**  
+  - Single blink → Left Click  
+  - Double blink → Double Click  
+
+- ✋ **Hand Gesture Detection**  
+  - Move cursor  
+  - Simulate keyboard keys  
+
+- 🔐 **User Authentication**  
+  - Login & Registration system using Tkinter  
+  - Credentials stored securely in SQLite  
+
+- 📸 **Real-Time Webcam Tracking**  
+  - Hand, eye, and face detection using Haar Cascade Classifier  
 
 ---
+
+## 🛠️ Technologies Used
+
+- **Python 3**
+- **Libraries: OpenCV, NumPy, Pillow, pynput, pyautogui**
+- **Tkinter (GUI)**
+- **SQLite**
+- **Haar Cascade Algorithm (from OpenCV)**
+- **IDE/Tools: Anaconda, Spyder IDE**
+
+
+---
+
+
+## 🧠 How It Works
+
+1. **Login/Register**  
+   Users first register or login through a Tkinter-based GUI. Credentials are stored in a local SQLite database.
+
+2. **Gesture Detection**  
+   Once logged in, the webcam starts capturing real-time video.
+
+3. **Haar Cascade Detection**  
+   Using pre-trained Haar Cascades:
+   - Eyes are detected to track blinks
+   - Hands are detected to trigger actions
+
+4. **Mouse & Keyboard Simulation**  
+   Eye blinks and finger positions are mapped to mouse and keyboard events.
+
+---
+
+---
+
+## 🖥️ Demo
+
+> Coming soon: Demo video or GIF preview of real-time gesture recognition
+
+---
+
+## ✅ Requirements
+
+- Python 3.x
+- Anaconda – for environment and package management
+- Spyder IDE  – for easier Python GUI development
+- OpenCV – pip install opencv-python
+- NumPy – pip install numpy
+- Pillow – pip install pillow
+- pynput – pip install pynput
+- pyautogui – pip install pyautogui
+- Tkinter – comes built-in with Python
+- SQLite3 – built-in with Python
+
+---
+
+## 📌 Setup Instructions
+
+
+1. Clone the repo:
+   
+   ```bash
+   git clone https://github.com/CodeByGautami/Gesture-Recognition-for-Virtual-Mouse-and-Keyboard.git
+   cd Gesture-Recognition-for-Virtual-Mouse-and-Keyboard
+
+2. Install the dependencies:
+
+    ```bash
+    opencv-python
+    pynput
+    tk
+    Pillowopencv-python
+
+
+3. Run the application:
+
+    ```bash
+    python gui_master.py
+
+4. Register a New User
+
+    Click on REGISTER → Enter details and capture face data
+
+5. Login and Start Gesture Control
+
+    After registering, click on LOGIN → the gesture control will start once authenticated
+
+
+## 🧠 How it Works
+
+🖐️ Hand Tracking: 
+    Detects hand landmarks using MediaPipe to control the cursor and keyboard.
+
+👁️ Eye Blink Detection:
+
+    Single blink → Single click
+
+    Double blink → Double click
+
+⌨️ Virtual Keyboard: Enables typing using finger gestures.
+
+🔐 Login & Registration: Authenticates users using a local SQLite database.
+
 
 ## 📷 Screenshots
 
@@ -43,21 +144,6 @@ This project enables users to control their computer using a webcam — with **e
 <img width="889" height="603" alt="image" src="https://github.com/user-attachments/assets/863c8349-faee-4632-937b-6f11ee7f868a" />
 
 
-
-## 🧑‍💻 How to Run the Project
-
-1. Clone the repo
-   git clone https://github.com/CodeByGautami/gesture-mouse-keyboard.git
-
-2. Install dependencies
-   ```
-   pip install opencv-python numpy
-   ```
-4. Run the program
-   Open the project in Spyder IDE (Anaconda)
-
-5. Run main.py
-   Make sure your webcam is connected and accessible
 
 
 
